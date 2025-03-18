@@ -1,0 +1,45 @@
+{
+    "Computers": {
+        "item1": {
+            "Processor": "Core I3",
+            "iRAM": 8,
+            "iROM": 256,
+            "name": "Dell Inspiron",
+            "color": "black",
+            "price": 34990
+        },
+        "item2": {
+            "Processor": "Core I7",
+            "iRAM": 8,
+            "iROM": 256,
+            "name": "Dell Inspiron",
+            "color": "black",
+            "price": 34990
+        }
+    },
+    "Laptops": {
+        "item1": {
+            "Processor": "Core I5",
+            "iRAM": 16,
+            "iROM": 512,
+            "screenSize": 13.5,
+            "batteryCapacity": 7100,
+            "name": "Lenovo IdeaPad 13",
+            "color": "black",
+            "price": 49990
+        }
+    },
+    "Smartphones": {
+        "item1": {
+            "Processor": "Snapdragon 7 Gen 3",
+            "iRAM": 12,
+            "iROM": 256,
+            "camera": 48,
+            "screenSize": 6.7,
+            "batteryCapacity": 5200,
+            "name": "Oneplus Nord 4",
+            "color": "blue",
+            "price": 37990
+        }
+    }
+}
