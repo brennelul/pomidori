@@ -1,7 +1,13 @@
+import json
+
+
 class Account:
-    def __init__(self, accountID, money):
-        self.__accountID = accountID
-        self.__money = money
+    def __init__(self):
+        with open("account.json", "r") as file:
+            data = json.load(file)
+            self.__accountID = data.get("AccountID")
+            self.__money = data.get("Money")
+            self.__purchaseHistory = data.get("Purchases")
 
     def addMoney(self, amount):
         if amount > 0:
@@ -10,50 +16,65 @@ class Account:
     def withdrawMoney(self, amount):
         if amount > 0:
             self.__money -= amount
-    
+
     def getBalance(self):
         return self.__money
-    
+
     def getAccountID(self):
         return self.__accountID
 
+    def addPurchase(self, purchases):
+        for i in range(len(purchases)):
+            self.__purchaseHistory[f"item{len(self.__purchaseHistory)}"] = {
+                "name": purchases[i]._name,
+                "price": purchases[i]._price,
+                "SKU": purchases[i]._SKU
+            }
+
+    def getPurchaseHistory(self):
+        return self.__purchaseHistory
+
+    def saveData(self):
+        with open("account.json", "w") as file:
+            tempDict = {
+                "AccountID": self.__accountID,
+                "Money": self.__money,
+                "Purchases": self.__purchaseHistory
+            }
+            json.dump(tempDict, file)
+
+
 class Item:
-    def __init__(self, name, color, price):
+    def __init__(self, name, color, price, SKU):
         self._name = name
         self._price = price
         self._color = color
+        self._SKU = SKU
 
-    def returnItems(self):
-        return self._name, self._color, self._price
 
 class Computers(Item):
-    def __init__(self, Processor, iRAM, iROM, name, color, price):
-        super().__init__(name, color, price)
+    def __init__(self, Processor, iRAM, iROM, name, color, price, SKU):
+        super().__init__(name, color, price, SKU)
         self._Processor = Processor
         self._iRAM = iRAM
         self._iROM = iROM
-    
-    def returnItems(self):
-        return super().returnItems(), self._Processor, self._iRAM, self._iROM
+
 
 class Laptops(Computers):
-    def __init__(self, Processor, iRAM, iROM, name, color, price, screenSize, batteryCapacity):
-        super().__init__(Processor, iRAM, iROM, name, color, price)
+    def __init__(self, Processor, iRAM, iROM, name, color,
+                 price, screenSize, batteryCapacity, SKU):
+        super().__init__(Processor, iRAM, iROM, name, color, price, SKU)
         self._screenSize = screenSize
         self._batteryCapacity = batteryCapacity
 
-    def returnItems(self):
-        return super().returnItems(), self._screenSize, self._batteryCapacity
-    
+
 class Smartphones(Item):
-    def __init__(self, Processor, iRAM, iROM, name, color, price, screenSize, batteryCapacity, camera):
-        super().__init__(name, color, price)
+    def __init__(self, Processor, iRAM, iROM, name, color, price,
+                 screenSize, batteryCapacity, camera, SKU):
+        super().__init__(name, color, price, SKU)
         self._Processor = Processor
         self._iRAM = iRAM
         self._iROM = iROM
         self._camera = camera
         self._screenSize = screenSize
         self._batteryCapacity = batteryCapacity
-
-    # def returnItems(self):
-        # return super().returnItems()

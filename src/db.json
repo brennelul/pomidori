@@ -6,7 +6,8 @@
             "iROM": 256,
             "name": "Dell Inspiron 3533",
             "color": "black",
-            "price": 34990
+            "price": 34990,
+            "SKU": "DELL-12345-S-BL"
         },
         "item2": {
             "Processor": "Core I7",
@@ -14,7 +15,26 @@
             "iROM": 256,
             "name": "Dell Inspiron 3537",
             "color": "black",
-            "price": 48990
+            "price": 48990,
+            "SKU": "DELL-12345-L-BL"
+        },
+        "item3": {
+            "Processor": "Core I3",
+            "iRAM": 8,
+            "iROM": 256,
+            "name": "Lenovo ThinkCentre m72e",
+            "color": "black",
+            "price": 15990,
+            "SKU": "82579LM"
+        },
+        "item4": {
+            "Processor": "Apple M4",
+            "iRAM": 16,
+            "iROM": 256,
+            "name": "Mac Mini",
+            "color": "silver",
+            "price": 64990,
+            "SKU": "MMFJ3LL"
         }
     },
     "Laptops": {
@@ -26,7 +46,30 @@
             "batteryCapacity": 7100,
             "name": "Lenovo IdeaPad 13",
             "color": "black",
-            "price": 49990
+            "price": 49990,
+            "SKU": "LE-55413i"
+        },
+        "item2": {
+            "Processor": "Apple M4",
+            "iRAM": 16,
+            "iROM": 256,
+            "screenSize": 16.0,
+            "batteryCapacity": 7100,
+            "name": "Apple MacBook Air",
+            "color": "silver",
+            "price": 109990,
+            "SKU": "MMFH98"
+        },
+        "item3": {
+            "Processor": "Core I7",
+            "iRAM": 16,
+            "iROM": 512,
+            "screenSize": 14.0,
+            "batteryCapacity": 9000,
+            "name": "Lenovo ThinkPad T14 Gen 4",
+            "color": "black",
+            "price": 59990,
+            "SKU": "L-571394T"
         }
     },
     "Smartphones": {
@@ -39,7 +82,32 @@
             "batteryCapacity": 5200,
             "name": "OnePlus Nord 4",
             "color": "blue",
-            "price": 37990
+            "price": 37990,
+            "SKU": "OP-54243Q"
+        },
+        "item2": {
+            "Processor": "Dimensity 9400",
+            "iRAM": 12,
+            "iROM": 256,
+            "camera": 50,
+            "screenSize": 6.67,
+            "batteryCapacity": 5800,
+            "name": "Vivo X200",
+            "color": "white",
+            "price": 46990,
+            "SKU": "V-14231"
+        },
+        "item3": {
+            "Processor": "Apple A18",
+            "iRAM": 8,
+            "iROM": 128,
+            "camera": 48,
+            "screenSize": 6.1,
+            "batteryCapacity": 3561 ,
+            "name": "Apple iPhone 16",
+            "color": "white",
+            "price": 64990,
+            "SKU": "V-14231"
         }
     }
 }

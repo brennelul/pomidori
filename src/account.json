@@ -1,4 +1,1 @@
-{
-    "AccountID": 13371337,
-    "Money": 54300
-}
+{"AccountID": 13371337, "Money": 10000006009, "Purchases": {"item0": {"name": "Dell Inspiron 3537", "price": 48990, "SKU": "DELL-12345-L-BL"}, "item1": {"name": "Dell Inspiron 3537", "price": 48990, "SKU": "DELL-12345-L-BL"}, "item2": {"name": "OnePlus Nord 4", "price": 37990, "SKU": "OP-54243Q"}, "item3": {"name": "Dell Inspiron 3537", "price": 48990, "SKU": "DELL-12345-L-BL"}, "item4": {"name": "Lenovo IdeaPad 13", "price": 49990, "SKU": "LE-55413i"}, "item5": {"name": "Dell Inspiron 3537", "price": 48990, "SKU": "DELL-12345-L-BL"}}}
