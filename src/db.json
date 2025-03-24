@@ -4,7 +4,7 @@
             "Processor": "Core I3",
             "iRAM": 8,
             "iROM": 256,
-            "name": "Dell Inspiron",
+            "name": "Dell Inspiron 3533",
             "color": "black",
             "price": 34990
         },
@@ -12,9 +12,9 @@
             "Processor": "Core I7",
             "iRAM": 8,
             "iROM": 256,
-            "name": "Dell Inspiron",
+            "name": "Dell Inspiron 3537",
             "color": "black",
-            "price": 34990
+            "price": 48990
         }
     },
     "Laptops": {
@@ -37,7 +37,7 @@
             "camera": 48,
             "screenSize": 6.7,
             "batteryCapacity": 5200,
-            "name": "Oneplus Nord 4",
+            "name": "OnePlus Nord 4",
             "color": "blue",
             "price": 37990
         }
