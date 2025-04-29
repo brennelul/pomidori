@@ -1,0 +1,6 @@
+{
+    "backup_paths": [],
+    "backup_dir": "backup",
+    "period_days": 15,
+    "last_backup": "2025-04-29 16:31"
+}
